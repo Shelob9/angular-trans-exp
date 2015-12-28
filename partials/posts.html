@@ -1,0 +1,13 @@
+<div ng-controller="ListController">
+    <div ng-repeater="post in posts">
+        <h1>
+            {{translations.title}} : {{post.title.rendered}}
+        </h1>
+        <p>
+            {{translations.author : {{post.author}}
+        </p>
+        <a ui-sref="single({id:post.id})">
+            {{translations.view}}
+        </a>
+    </div>
+</div>
